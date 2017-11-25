@@ -18,23 +18,25 @@ body {
     box-sizing: border-box;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
 [class*="col-"] {
     float: left;
-    /*padding: 15px;*/
-    /*border: 1px solid red;*/
+    width: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
 
 h1, h2, h3, h4, h5 {
@@ -47,18 +49,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
   margin-bottom: 36px;
   text-align: center;
 }
 
-.navbar:hover {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+.navbar:hover, .navbar.active {
+  background-color: rgba(128,128,128, 0.7);
 }
 
-a.fill-navbar {
+a.fill-navbar, a.logo {
     display: block;
     height: 100%;
     width: 100%;
@@ -67,8 +68,10 @@ a.fill-navbar {
 }
 
 .logo {
-  height: 72px;
-  margin-bottom: 36px;
+  width: 50%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .row::after {
@@ -82,7 +85,7 @@ a.fill-navbar {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
@@ -90,7 +93,11 @@ footer {
 }
 
 .personal-photo {
-  width:33%;
+  width: 50%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 5%;
+}
+
+ul {
+    margin-top:0px;
 }
