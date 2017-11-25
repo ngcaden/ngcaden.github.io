@@ -1,0 +1,10 @@
+<footer>
+  <p class="align-center">
+    &copy; Quang Nguyen
+    {% if page.date %}
+      {{ page.date | date: '%Y' }}
+    {% else %}
+      {{ site.time | date: '%Y' }}
+    {% endif %}
+  </p>
+</footer>
