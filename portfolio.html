@@ -1,23 +1,26 @@
---- 
-layout: page 
+---
+layout: page
 title: My Portfolio
 permalink: /portfolio
 ---
+<div class="row">
 
 {% for project in site.posts %}
-<a href="{{ project.url }}">
-  <div>
-    <div class="row">
-      <div class="col-3">
-
-      </div>
-      <div class="col-3">
+<div class="col-6" style="padding:10px;">
+  <a href="{{ project.url }}" style="text-decoration: none; color: black;">
+    <div class="project">
+      <img src="/images/{{ project.image }}" class="project-image">
+      <div class="container">
         <h3>{{ project.title }}</h3>
+        <p style="text-align:right;">
+          {% for language in project.categories %}
+            <strong style="font-size:72%;">{{ language }}</strong>&nbsp;
+          {% endfor %}
+        </p>
       </div>
     </div>
-  </div>
-</a>
-
-
-<hr>
+  </a>
+  &nbsp;
+</div>
 {% endfor %}
+</div>
