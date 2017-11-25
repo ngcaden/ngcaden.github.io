@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Building an Enigma Machine in C++" 
+title: "Imperial Physics Society Website" 
 date: 2017-11-25
 permalink: /portfolio/enigma/
-categories: C++
-image: enigma.jpg
+categories: PHP CSS Javascript Laravel AngularJS
+image: physoc.png
 ---
 
 
