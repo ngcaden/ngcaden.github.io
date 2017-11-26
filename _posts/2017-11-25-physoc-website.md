@@ -2,9 +2,9 @@
 layout: post
 title: "Imperial Physics Society Website" 
 date: 2017-11-25
-permalink: /portfolio/enigma/
-categories: PHP CSS Javascript Laravel AngularJS
-image: physoc.png
+permalink: /portfolio/physoc-website/
+categories: Laravel AngularJS
+image: physoc-website.png
 ---
 
 
