@@ -10,17 +10,17 @@ permalink: /portfolio
   <a href="{{ project.url }}" style="text-decoration: none; color: black;">
     <div class="project">
       <div class="project-image" 
-      {% if project.image %}
-        style="background-image:url(/images/{{ project.image }});"
+      {% if project.images %}
+        style="background-image:url(/images/{{ project.images.first }});"
       {% endif %}></div>
       
       <div class="project-text">
         <h3>{{ project.title }}</h3>
-        <p>
-          {% for language in project.categories %}
-            <strong>{{ language }}</strong>&nbsp;
+        <h5>
+          {% for language in project.languages %}
+            {{ language }}&nbsp;
           {% endfor %}
-        </p>
+        </h5>
       </div>
     </div>
   </a>

@@ -3,11 +3,23 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
-<p>
-    {% for language in page.categories %}
-        <strong>{{ language }}</strong>&nbsp; 
-    {% endfor %}
-</p>
-<div style="align-center">
-    <img src="/images/{{ page.image }}" class="personal-photo">
-</div>
+<h3>
+		{% for language in page.languages %}
+				{{ language }}&nbsp; 
+		{% endfor %}
+</h3>
+
+{% if page.images %}
+	<div class="slider-container">
+	{% for image in page.images %}
+			<img class="mySlides" src="/images/{{ image }}">
+	{% endfor %}
+
+	{% if page.images.size > 1 %}
+		<button class="slider-button button-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="slider-button button-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+	{% endif %}
+{% endif %}
+
+{{ page.content }}

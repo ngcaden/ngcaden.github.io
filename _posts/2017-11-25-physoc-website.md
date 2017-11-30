@@ -3,8 +3,8 @@ layout: post
 title: "Imperial Physics Society Website" 
 date: 2017-11-25
 permalink: /portfolio/physoc-website/
-categories: Laravel AngularJS
-image: physoc-website.png
+languages: [Laravel,AngularJS]
+images: [physoc-website.png, MySQL]
 ---
 
 
