@@ -198,3 +198,12 @@ strong, b {
 	color:black!important;
 	background-color:#ccc!important
 }
+
+nav select {
+	display:none;
+}
+
+@media (max-width:576px) {
+	nav .row {display: none;}
+	nav select {display: inline-block;}
+}
