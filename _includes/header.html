@@ -5,26 +5,15 @@
     </a>
   </div>
   
-  <nav>
-    <div class="row">
-      <div class="col-4 navbar {% if page.url == "/about" %} active {% endif %}">
-        <a class="fill-navbar" href={{ "/about" }}><p>ABOUT</p></a>
-      </div>
-      <div class="col-4 navbar {% if page.url == "/portfolio" %} active {% endif %}">
-        <a class="fill-navbar" href={{ "/portfolio" }}><p>PORTFOLIO</p></a>
-      </div>
-      <div class="col-4 navbar {% if page.url == "/contact" %} active {% endif %}">
-        <a class="fill-navbar" href={{ "/contact" }}><p>CONTACT</p></a>
-      </div>
+  <div class="row">
+    <div class="navbar {% if page.url == "/about" %} active {% endif %}">
+      <a class="fill-navbar" href={{ "/about" }}><p>ABOUT</p></a>
     </div>
-
-    <select onChange="window.location.href=this.value">
-      <option value={{ "/about" }}>ABOUT
-      </option>
-      <option value={{ "/portfolio" }}>PORTFOLIO
-      </option>
-      <option value={{ "/contact" }}>CONTACT
-      </option>
-    </select>
-  </nav>
+    <div class="navbar {% if page.url == "/portfolio" %} active {% endif %}">
+      <a class="fill-navbar" href={{ "/portfolio" }}><p>PORTFOLIO</p></a>
+    </div>
+    <div class="navbar {% if page.url == "/contact" %} active {% endif %}">
+      <a class="fill-navbar" href={{ "/contact" }}><p>CONTACT</p></a>
+    </div>
+  </div>
 </header>

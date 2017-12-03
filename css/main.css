@@ -4,13 +4,19 @@ html {
 
 body {
 	width: 100%;
-	max-width: 729px;
+	max-width: 992px;
 	margin: auto;
 	font-weight: 300;
 }
 
+.text-area {
+	width: 100%;
+	max-width: 768px;
+	margin: auto;
+}
+
 * {
-		box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 [class*="col-"] {
@@ -18,7 +24,7 @@ body {
 		width: 100%;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
 		.col-1 {width: 8.33%;}
 		.col-2 {width: 16.66%;}
 		.col-3 {width: 25%;}
@@ -33,6 +39,7 @@ body {
 		.col-12 {width: 100%;}
 }
 
+
 h1, h2, h3, h4, h5 {
 	font-weight: 300;
 }
@@ -43,6 +50,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar {
+	width: 33.33%;
+	float: left;
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
 	margin-bottom: 36px;
@@ -152,7 +161,7 @@ strong, b {
 }
 
 .slider-container img  {
-	width: 100%;
+	width: 100%;cv
 }
 
 .button-left {
@@ -199,11 +208,17 @@ strong, b {
 	background-color:#ccc!important
 }
 
-nav select {
-	display:none;
+.cv {
+	/* border: 1px solid black;  */
+	border-radius:0.5em;
+	display:inline-block;
+	padding:1em;
+	margin:auto;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	transition: 0.2s;
+	color: black
 }
 
-@media (max-width:576px) {
-	nav .row {display: none;}
-	nav select {display: inline-block;}
+.cv:hover {
+	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);	
 }
